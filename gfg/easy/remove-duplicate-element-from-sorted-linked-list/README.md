@@ -30,7 +30,7 @@ Explanation: In the given linked list  2 -> 2 -> 2 -> 2, 2 is the only element a
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:58:19.431Z  
+**Submitted:** 2026-09-30T15:20:40.963Z  
 
 ```java
 /* Structure of linked list Node
