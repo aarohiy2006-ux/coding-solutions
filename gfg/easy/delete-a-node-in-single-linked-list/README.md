@@ -31,7 +31,7 @@ Explanation: After deleting the node at 6th position, the linked list is as
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:54:47.807Z  
+**Submitted:** 2026-09-30T15:20:59.013Z  
 
 ```java
 /* Structure of Linked List Node
