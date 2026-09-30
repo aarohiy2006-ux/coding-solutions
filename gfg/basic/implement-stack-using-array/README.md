@@ -60,7 +60,7 @@ isFull(): Return true as the stack is full. Capacity = 1.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:04:01.959Z  
+**Submitted:** 2026-09-30T15:22:18.503Z  
 
 ```cpp
 class myStack {
