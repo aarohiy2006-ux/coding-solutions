@@ -31,7 +31,7 @@ Explanation: The 4 elements are 1, 2, 2 and 2.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:03:13.275Z  
+**Submitted:** 2026-09-30T15:14:59.741Z  
 
 ```java
 
