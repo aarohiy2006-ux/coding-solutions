@@ -50,49 +50,39 @@ rotate 2 steps to the right: [3,99,-1,-100]
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 85.12%)  
-**Memory:** 268.9 MB (beats 21.26%)  
-**Submitted:** 2026-10-05T11:23:57.388Z  
+**Memory:** 268.6 MB (beats 62.87%)  
+**Submitted:** 2026-10-05T11:41:38.717Z  
 
 ```java
 class Solution {
     public void rotate(int[] nums, int k) {
      int n=nums.length;
+     
+     if(n==0){
+        return;
+     }
      k=k%n;
-     int left=0;
-     int right=n-1;
-     while(left<right){
-        int temp=nums[left];
-        nums[left]=nums[right];
-        nums[right]=temp;
-        left++;
-        right--;
 
-     }
-     left=0;
-     right=k-1;
-     while(left<right){
-     int temp=nums[left];
-     nums[left]=nums[right];
-     nums[right]=temp;
-     left++;
-     right--;
-     }
-
-     left=k;
-     right=n-1;
-     while(left<right){
-        int temp=nums[left];
-        nums[left]=nums[right];
-        nums[right]=temp;
-        left++;
-        right--;
-
-     }
-
-
-      
+reverse(nums,0,n-1);
+reverse(nums,0,k-1);
+reverse(nums,k,n-1);
     }
+
+public void reverse(int[] nums,int left, int right){
+    
+     while(left < right){
+        int temp=nums[left];
+        nums[left]=nums[right];
+        nums[right]=temp;
+       
+        left++;
+        right--;
+
+     
+     }
 }
+}
+     
 ```
 
 ---
