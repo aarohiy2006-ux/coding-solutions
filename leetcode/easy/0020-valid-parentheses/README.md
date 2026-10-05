@@ -53,18 +53,20 @@ An input string is valid if:
 
 ## Solution
 
-**Language:** C  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.5 MB (beats 12.05%)  
-**Submitted:** 2026-09-30T15:41:52.407Z  
+**Language:** Java  
+**Runtime:** 1 ms (beats 99.92%)  
+**Memory:** 43.2 MB (beats 71.92%)  
+**Submitted:** 2026-10-05T13:53:16.791Z  
 
-```c
-bool isValid(char* s) {
-    char stack[10000];
+```java
+class Solution {
+    public boolean isValid(String s) {
+
+        char[] stack = new char[s.length()];
     int top = -1;
 
-    for (int i = 0; s[i] != '\0'; i++) {
-        char c = s[i];
+    for (int i = 0; i<s.length(); i++) {
+        char c = s.charAt(i);
 
         if (c == '(' || c == '[' || c == '{') {
             top++;
@@ -88,7 +90,10 @@ bool isValid(char* s) {
     }
 
     return top == -1;
-}
+}   
+        
+    }
+
 ```
 
 ---
