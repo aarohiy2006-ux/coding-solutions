@@ -34,29 +34,37 @@ Output: [1,2,3]
 
 ## Solution
 
-**Language:** C  
+**Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 11.7 MB (beats 44.63%)  
-**Submitted:** 2026-09-30T15:45:18.389Z  
+**Memory:** 45.5 MB (beats 32.79%)  
+**Submitted:** 2026-10-05T12:12:59.605Z  
 
-```c
+```java
 /**
  * Definition for singly-linked list.
- * struct ListNode {
+ * public class ListNode {
  *     int val;
- *     struct ListNode *next;
- * };
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
  */
-struct ListNode* deleteDuplicates(struct ListNode* head) {
-    struct ListNode*temp=head;
-    while(temp!=NULL && temp->next!=NULL){
-        if(temp->val==temp->next->val){
-
-            temp->next=temp->next->next;
-    }
-    else(temp=temp->next);
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+      ListNode temp=head;
+      
+      while(temp!=null && temp.next!=null){
+        if(temp.val==temp.next.val){
+            temp.next=temp.next.next;
+        }
+        else{
+            temp=temp.next;
+      }  
+      
     }
     return head;
+}
 }
 ```
 
