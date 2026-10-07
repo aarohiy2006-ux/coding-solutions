@@ -7,15 +7,18 @@ int[] arr = new int[str.length()];
 for (int i = 0; i < str.length(); i++) {
     arr[i] = str.charAt(i) - '0';
 }
-       int left=0;
-       int right=arr.length-1;
-       while(left<right){
-        if(arr[left]!=arr[right]){
-            return false;
-        }
-        left++;
-        right--;
-       } 
+       int original = x;
+int reverse = 0;
+
+while (x > 0) {
+    int digit = x% 10;
+    reverse = reverse * 10 + digit;
+    x = x / 10;
+}
+
+if( original == reverse){
        return true;
+    }
+    return false;
     }
 }
