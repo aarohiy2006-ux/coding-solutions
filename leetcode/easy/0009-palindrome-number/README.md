@@ -48,9 +48,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 23.46%)  
-**Memory:** 46.1 MB (beats 33.33%)  
-**Submitted:** 2026-10-07T17:10:38.667Z  
+**Runtime:** 7 ms (beats 11.70%)  
+**Memory:** 46.3 MB (beats 6.24%)  
+**Submitted:** 2026-10-07T17:16:39.902Z  
 
 ```java
 class Solution {
@@ -62,16 +62,19 @@ int[] arr = new int[str.length()];
 for (int i = 0; i < str.length(); i++) {
     arr[i] = str.charAt(i) - '0';
 }
-       int left=0;
-       int right=arr.length-1;
-       while(left<right){
-        if(arr[left]!=arr[right]){
-            return false;
-        }
-        left++;
-        right--;
-       } 
+       int original = x;
+int reverse = 0;
+
+while (x > 0) {
+    int digit = x% 10;
+    reverse = reverse * 10 + digit;
+    x = x / 10;
+}
+
+if( original == reverse){
        return true;
+    }
+    return false;
     }
 }
 ```
