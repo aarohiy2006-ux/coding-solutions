@@ -11,10 +11,12 @@ class Solution {
         }
          int ans = Integer.MAX_VALUE;
 
-                // Find the smallest element occurring exactly k times
+               
                 for (int key : map.keySet()) {
                     if (map.get(key) == k) {
-                        ans = Math.min(ans, key);
+                        if (key < ans) {
+                            ans = key;
+                        }
                     }
                 }
 
@@ -22,6 +24,5 @@ class Solution {
                     return -1;
                 }
 
-                return ans;
-            }
-        }
+                return ans;}
+}
