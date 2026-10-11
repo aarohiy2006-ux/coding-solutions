@@ -31,7 +31,7 @@ Explanation: 5 and 2 each appear exactly 1 time. Since we need the smallest, the
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-11T14:45:20.350Z  
+**Submitted:** 2026-10-11T15:19:31.702Z  
 
 ```java
 import java.util.*;
@@ -47,10 +47,12 @@ class Solution {
         }
          int ans = Integer.MAX_VALUE;
 
-                // Find the smallest element occurring exactly k times
+               
                 for (int key : map.keySet()) {
                     if (map.get(key) == k) {
-                        ans = Math.min(ans, key);
+                        if (key < ans) {
+                            ans = key;
+                        }
                     }
                 }
 
@@ -58,9 +60,8 @@ class Solution {
                     return -1;
                 }
 
-                return ans;
-            }
-        }
+                return ans;}
+}
 ```
 
 ---
