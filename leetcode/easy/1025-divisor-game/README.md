@@ -44,9 +44,9 @@ Explanation: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-10-12T12:03:54.758Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.9 MB (beats 69.96%)  
+**Submitted:** 2026-10-12T12:04:00.711Z  
 
 ```java
 class Solution {
