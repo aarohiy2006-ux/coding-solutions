@@ -37,8 +37,8 @@ Output: false
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.3 MB (beats 98.18%)  
-**Submitted:** 2026-10-19T18:43:52.698Z  
+**Memory:** 42.7 MB (beats 91.92%)  
+**Submitted:** 2026-10-20T15:35:22.974Z  
 
 ```java
 /**
