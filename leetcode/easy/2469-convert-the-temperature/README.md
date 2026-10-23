@@ -45,8 +45,8 @@ Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and con
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 46.1 MB (beats 58.10%)  
-**Submitted:** 2026-10-12T11:41:06.475Z  
+**Memory:** 45.5 MB (beats 94.36%)  
+**Submitted:** 2026-10-23T16:14:35.177Z  
 
 ```java
 class Solution {
