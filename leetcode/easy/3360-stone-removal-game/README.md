@@ -45,9 +45,9 @@ Given a positive integer `n`, return `true` if Alice wins the game and `false` o
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.1 MB  
-**Submitted:** 2026-11-05T12:02:07.471Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.2 MB (beats 99.27%)  
+**Submitted:** 2026-11-05T12:02:14.979Z  
 
 ```java
 class Solution {
