@@ -49,9 +49,9 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 85.12%)  
-**Memory:** 268.6 MB (beats 62.87%)  
-**Submitted:** 2026-10-05T11:41:38.717Z  
+**Runtime:** 5 ms (beats 60.29%)  
+**Memory:** 268.3 MB (beats 76.85%)  
+**Submitted:** 2026-11-06T06:48:37.789Z  
 
 ```java
 class Solution {
